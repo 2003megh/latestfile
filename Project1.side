@@ -1,0 +1,103 @@
+{
+  "id": "c4d0b1ac-d80b-4979-a1d8-db10b17da80c",
+  "version": "2.0",
+  "name": "Project1",
+  "url": "https://www.bsphcl.co.in",
+  "tests": [{
+    "id": "af3e042f-138e-422c-b2ca-de5bd3744b2c",
+    "name": "Test1",
+    "commands": [{
+      "id": "a053ddef-b99a-4786-9ca9-fc460be024bc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9df41cb9-910f-4a36-9b63-078c5a9a4068",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1e5a6c2-822f-4006-851c-832b57a66e79",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a9c1979-7e8c-431f-9cbf-aa52d8556878",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Notice Board",
+      "targets": [
+        ["linkText=Notice Board", "linkText"],
+        ["css=tr:nth-child(4) > .bluebg > .bluebg", "css:finder"],
+        ["xpath=//a[contains(text(),'Notice Board')]", "xpath:link"],
+        ["xpath=(//a[@onclick=\"(divA.style.display='none')\"])[4]", "xpath:attributes"],
+        ["xpath=//table[@id='table3']/tbody/tr[4]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Notice.aspx')]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Notice Board')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4283300e-f80a-4e9b-a28d-fd54345b65c1",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee83bd9c-b4c6-480b-ad35-e4f97cc23200",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "544e8cf0-ab3c-422d-8763-8f12233affd6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Regarding reservation of Community Hall Situated in BSPHCL Colony(New Punaichak) vide Office Order No. 124 Dated 27.01.2024",
+      "targets": [
+        ["linkText=Regarding reservation of Community Hall Situated in BSPHCL Colony(New Punaichak) vide Office Order No. 124 Dated 27.01.2024", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Regarding reservation of Community Hall Situated in BSPHCL Colony(New Punaichak) vide Office Order No. 124 Dated 27.01.2024')]", "xpath:link"],
+        ["xpath=//table[@id='gvNotification']/tbody/tr[2]/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:__doPostBack('gvNotification','select$0')\")]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Regarding reservation of Community Hall Situated in BSPHCL Colony(New Punaichak) vide Office Order No. 124 Dated 27.01.2024')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win978",
+      "windowTimeout": 2000
+    }, {
+      "id": "3918ce9c-30da-46a7-877c-6d36271cb50c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win978}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b3016012-a444-4a52-93a1-1bf68fe4580a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["af3e042f-138e-422c-b2ca-de5bd3744b2c"]
+  }],
+  "urls": ["https://www.bsphcl.co.in/"],
+  "plugins": []
+}
